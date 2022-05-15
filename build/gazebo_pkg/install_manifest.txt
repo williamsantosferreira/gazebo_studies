@@ -1,0 +1,15 @@
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/ament_index/resource_index/package_run_dependencies/gazebo_pkg
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/ament_index/resource_index/parent_prefix_path/gazebo_pkg
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/ament_prefix_path.sh
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/ament_prefix_path.dsv
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/path.sh
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/path.dsv
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/local_setup.bash
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/local_setup.sh
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/local_setup.zsh
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/local_setup.dsv
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/package.dsv
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/ament_index/resource_index/packages/gazebo_pkg
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/cmake/gazebo_pkgConfig.cmake
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/cmake/gazebo_pkgConfig-version.cmake
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/package.xml
