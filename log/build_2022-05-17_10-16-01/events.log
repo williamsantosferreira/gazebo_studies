@@ -1,0 +1,106 @@
+[0.000000] (-) TimerEvent: {}
+[0.000103] (gazebo_pkg) JobQueued: {'identifier': 'gazebo_pkg', 'dependencies': OrderedDict()}
+[0.000355] (gazebo_pkg) JobStarted: {'identifier': 'gazebo_pkg'}
+[0.008094] (gazebo_pkg) JobProgress: {'identifier': 'gazebo_pkg', 'progress': 'cmake'}
+[0.008709] (gazebo_pkg) JobProgress: {'identifier': 'gazebo_pkg', 'progress': 'build'}
+[0.009524] (gazebo_pkg) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg', '--', '-j6', '-l6'], 'cwd': '/home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,60819,0'), ('USER', 'william'), ('SSH_AGENT_PID', '3573'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/william'), ('OLDPWD', '/home/william'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '3005'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'appmenu-qt5'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'william'), ('JOURNAL_STREAM', '9:56725'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'william'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_MODULES', 'overlay-scrollbar'), ('WINDOWPATH', '2'), ('PATH', '/home/william/bin:/home/william/.local/bin:/opt/ros/foxy/bin:/home/william/bin:/home/william/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/will-pc:@/tmp/.ICE-unix/3610,unix/will-pc:/tmp/.ICE-unix/3610'), ('INVOCATION_ID', '3ad1e1f20d0044f3819a56ee0b9fb0e4'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45d534aa_b004_4624_b29b_984a611fbdd3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.674'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%1'), ('EDITOR', 'vim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.021043] (gazebo_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.039071] (gazebo_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099339] (-) TimerEvent: {}
+[0.199577] (-) TimerEvent: {}
+[0.208428] (gazebo_pkg) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.286436] (gazebo_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.297849] (gazebo_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.299656] (-) TimerEvent: {}
+[0.380789] (gazebo_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.399744] (-) TimerEvent: {}
+[0.400242] (gazebo_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.475101] (gazebo_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499832] (-) TimerEvent: {}
+[0.535589] (gazebo_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.537872] (gazebo_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.538675] (gazebo_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.579353] (gazebo_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.579812] (gazebo_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.599924] (-) TimerEvent: {}
+[0.620757] (gazebo_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.620961] (gazebo_pkg) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.649542] (gazebo_pkg) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.650885] (gazebo_pkg) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.687554] (gazebo_pkg) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.688641] (gazebo_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.700036] (-) TimerEvent: {}
+[0.800254] (-) TimerEvent: {}
+[0.835108] (gazebo_pkg) StdoutLine: {'line': b'-- Found turtlesim: 1.2.5 (/opt/ros/foxy/share/turtlesim/cmake)\n'}
+[0.900365] (-) TimerEvent: {}
+[0.932475] (gazebo_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.968508] (gazebo_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.000475] (-) TimerEvent: {}
+[1.024051] (gazebo_pkg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.025742] (gazebo_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.025934] (gazebo_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.026017] (gazebo_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.027398] (gazebo_pkg) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.027495] (gazebo_pkg) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.028487] (gazebo_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.030309] (gazebo_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.030372] (gazebo_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.030867] (gazebo_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.036185] (gazebo_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.049477] (gazebo_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.050719] (gazebo_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/build/gazebo_pkg\n'}
+[1.062057] (gazebo_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o\x1b[0m\n'}
+[1.100565] (-) TimerEvent: {}
+[1.200832] (-) TimerEvent: {}
+[1.301074] (-) TimerEvent: {}
+[1.401330] (-) TimerEvent: {}
+[1.501551] (-) TimerEvent: {}
+[1.601804] (-) TimerEvent: {}
+[1.702050] (-) TimerEvent: {}
+[1.802304] (-) TimerEvent: {}
+[1.902532] (-) TimerEvent: {}
+[2.002780] (-) TimerEvent: {}
+[2.103011] (-) TimerEvent: {}
+[2.203269] (-) TimerEvent: {}
+[2.303512] (-) TimerEvent: {}
+[2.403769] (-) TimerEvent: {}
+[2.504026] (-) TimerEvent: {}
+[2.604271] (-) TimerEvent: {}
+[2.704484] (-) TimerEvent: {}
+[2.804705] (-) TimerEvent: {}
+[2.904928] (-) TimerEvent: {}
+[3.005172] (-) TimerEvent: {}
+[3.105385] (-) TimerEvent: {}
+[3.205636] (-) TimerEvent: {}
+[3.305849] (-) TimerEvent: {}
+[3.406091] (-) TimerEvent: {}
+[3.506332] (-) TimerEvent: {}
+[3.587576] (gazebo_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtle_move\x1b[0m\n'}
+[3.606443] (-) TimerEvent: {}
+[3.706689] (-) TimerEvent: {}
+[3.757254] (gazebo_pkg) StdoutLine: {'line': b'[100%] Built target turtle_move\n'}
+[3.760027] (gazebo_pkg) CommandEnded: {'returncode': 0}
+[3.773140] (gazebo_pkg) JobProgress: {'identifier': 'gazebo_pkg', 'progress': 'install'}
+[3.776206] (gazebo_pkg) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg'], 'cwd': '/home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,60819,0'), ('USER', 'william'), ('SSH_AGENT_PID', '3573'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/william'), ('OLDPWD', '/home/william'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '3005'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'appmenu-qt5'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'william'), ('JOURNAL_STREAM', '9:56725'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'william'), ('TERM', 'screen'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_MODULES', 'overlay-scrollbar'), ('WINDOWPATH', '2'), ('PATH', '/home/william/bin:/home/william/.local/bin:/opt/ros/foxy/bin:/home/william/bin:/home/william/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/will-pc:@/tmp/.ICE-unix/3610,unix/will-pc:/tmp/.ICE-unix/3610'), ('INVOCATION_ID', '3ad1e1f20d0044f3819a56ee0b9fb0e4'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45d534aa_b004_4624_b29b_984a611fbdd3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.674'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('TMUX_PANE', '%1'), ('EDITOR', 'vim'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.777888] (gazebo_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.778013] (gazebo_pkg) StdoutLine: {'line': b'-- Installing: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/lib/gazebo_pkg/turtle_move\n'}
+[3.778721] (gazebo_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/lib/gazebo_pkg/turtle_move" to ""\n'}
+[3.778810] (gazebo_pkg) StdoutLine: {'line': b'-- Installing: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/ament_index/resource_index/package_run_dependencies/gazebo_pkg\n'}
+[3.778872] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/ament_index/resource_index/parent_prefix_path/gazebo_pkg\n'}
+[3.778951] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/ament_prefix_path.sh\n'}
+[3.779033] (gazebo_pkg) StdoutLine: {'line': b'-- Installing: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/ament_prefix_path.dsv\n'}
+[3.779108] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/path.sh\n'}
+[3.779201] (gazebo_pkg) StdoutLine: {'line': b'-- Installing: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/path.dsv\n'}
+[3.779269] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/local_setup.bash\n'}
+[3.779352] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/local_setup.sh\n'}
+[3.779427] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/local_setup.zsh\n'}
+[3.779480] (gazebo_pkg) StdoutLine: {'line': b'-- Installing: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/local_setup.dsv\n'}
+[3.779532] (gazebo_pkg) StdoutLine: {'line': b'-- Installing: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/package.dsv\n'}
+[3.779584] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/ament_index/resource_index/packages/gazebo_pkg\n'}
+[3.779636] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/cmake/gazebo_pkgConfig.cmake\n'}
+[3.779688] (gazebo_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/cmake/gazebo_pkgConfig-version.cmake\n'}
+[3.779752] (gazebo_pkg) StdoutLine: {'line': b'-- Installing: /home/william/\xc3\x81rea de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/package.xml\n'}
+[3.780642] (gazebo_pkg) CommandEnded: {'returncode': 0}
+[3.806882] (-) TimerEvent: {}
+[3.808241] (gazebo_pkg) JobEnded: {'identifier': 'gazebo_pkg', 'rc': 0}
+[3.808895] (-) EventReactorShutdown: {}

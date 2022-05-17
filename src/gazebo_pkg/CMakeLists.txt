@@ -17,6 +17,10 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(turtlesim REQUIRED)
+find_package(geometry_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -31,5 +35,14 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+add_executable(turtle_move src/turtle_move.cpp) 
+ament_target_dependencies(turtle_move rclcpp std_msgs turtlesim geometry_msgs)
+
+
+install(TARGETS
+  turtle_move
+  DESTINATION lib/${PROJECT_NAME})
+
 
 ament_package()

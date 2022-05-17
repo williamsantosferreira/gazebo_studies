@@ -1,3 +1,4 @@
+/home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/lib/gazebo_pkg/turtle_move
 /home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/ament_index/resource_index/package_run_dependencies/gazebo_pkg
 /home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/ament_index/resource_index/parent_prefix_path/gazebo_pkg
 /home/william/Área de Trabalho/gazebo_studies/install/gazebo_pkg/share/gazebo_pkg/environment/ament_prefix_path.sh

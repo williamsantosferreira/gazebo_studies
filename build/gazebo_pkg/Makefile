@@ -110,6 +110,16 @@ list_install_components:
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/opt/cmake-3.21.4-linux-x86_64/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -129,16 +139,6 @@ test:
 # Special rule for the target test
 test/fast: test
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/opt/cmake-3.21.4-linux-x86_64/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -197,6 +197,43 @@ gazebo_pkg_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gazebo_pkg_uninstall.dir/build.make CMakeFiles/gazebo_pkg_uninstall.dir/build
 .PHONY : gazebo_pkg_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named turtle_move
+
+# Build rule for target.
+turtle_move: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtle_move
+.PHONY : turtle_move
+
+# fast build rule for target.
+turtle_move/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_move.dir/build.make CMakeFiles/turtle_move.dir/build
+.PHONY : turtle_move/fast
+
+src/turtle_move.o: src/turtle_move.cpp.o
+.PHONY : src/turtle_move.o
+
+# target to build an object file
+src/turtle_move.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_move.dir/build.make CMakeFiles/turtle_move.dir/src/turtle_move.cpp.o
+.PHONY : src/turtle_move.cpp.o
+
+src/turtle_move.i: src/turtle_move.cpp.i
+.PHONY : src/turtle_move.i
+
+# target to preprocess a source file
+src/turtle_move.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_move.dir/build.make CMakeFiles/turtle_move.dir/src/turtle_move.cpp.i
+.PHONY : src/turtle_move.cpp.i
+
+src/turtle_move.s: src/turtle_move.cpp.s
+.PHONY : src/turtle_move.s
+
+# target to generate assembly for a file
+src/turtle_move.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_move.dir/build.make CMakeFiles/turtle_move.dir/src/turtle_move.cpp.s
+.PHONY : src/turtle_move.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... gazebo_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... turtle_move"
+	@echo "... src/turtle_move.o"
+	@echo "... src/turtle_move.i"
+	@echo "... src/turtle_move.s"
 .PHONY : help
 
 
