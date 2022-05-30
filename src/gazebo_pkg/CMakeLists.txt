@@ -39,9 +39,12 @@ endif()
 add_executable(turtle_move src/turtle_move.cpp) 
 ament_target_dependencies(turtle_move rclcpp std_msgs turtlesim geometry_msgs)
 
+add_executable(gazebo_move src/gazebo_move.cpp) 
+ament_target_dependencies(gazebo_move rclcpp std_msgs geometry_msgs)
 
 install(TARGETS
   turtle_move
+  gazebo_move
   DESTINATION lib/${PROJECT_NAME})
 
 

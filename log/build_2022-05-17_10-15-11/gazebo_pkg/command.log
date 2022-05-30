@@ -1,2 +1,0 @@
-Invoking command in '/home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake --build /home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg -- -j6 -l6
-Invoked command in '/home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake --build /home/william/Área de Trabalho/gazebo_studies/build/gazebo_pkg -- -j6 -l6
