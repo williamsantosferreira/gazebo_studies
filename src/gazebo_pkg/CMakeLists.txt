@@ -21,6 +21,9 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -42,9 +45,13 @@ ament_target_dependencies(turtle_move rclcpp std_msgs turtlesim geometry_msgs)
 add_executable(gazebo_move src/gazebo_move.cpp) 
 ament_target_dependencies(gazebo_move rclcpp std_msgs geometry_msgs)
 
+add_executable(gazebo_goal src/gazebo_goal.cpp) 
+ament_target_dependencies(gazebo_goal rclcpp std_msgs geometry_msgs nav_msgs tf2_geometry_msgs)
+
 install(TARGETS
   turtle_move
   gazebo_move
+  gazebo_goal
   DESTINATION lib/${PROJECT_NAME})
 
 
