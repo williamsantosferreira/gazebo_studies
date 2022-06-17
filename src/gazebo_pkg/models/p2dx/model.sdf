@@ -1,7 +1,14 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
   <model name="p2dx">
-    <link name="chassis">
+  <static>false</static>
+  
+    <!-- ****************** ROBOT BASE FOOTPRINT ***************************  -->
+  <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+  <link name="base_footprint"/>
+  
+    <!-- ******************** ROBOT BASE ************************************ -->
+    <link name="base_link">
       <pose>0 0 0.16 0 0 0</pose>
       <inertial>
         <mass>5.67</mass>
@@ -157,7 +164,7 @@
     <joint type="revolute" name="left_wheel_hinge">
       <pose>0 0 -0.03 0 0 0</pose>
       <child>left_wheel</child>
-      <parent>chassis</parent>
+      <parent>base_link</parent>
       <axis>
         <xyz>0 1 0</xyz>
         <use_parent_model_frame>true</use_parent_model_frame>
@@ -166,12 +173,18 @@
     <joint type="revolute" name="right_wheel_hinge">
       <pose>0 0 0.03 0 0 0</pose>
       <child>right_wheel</child>
-      <parent>chassis</parent>
+      <parent>base_link</parent>
       <axis>
         <xyz>0 1 0</xyz>
         <use_parent_model_frame>true</use_parent_model_frame>
       </axis>
     </joint>
+    
+    <!-- ******************* PLUGINS **************************** -->
+    
+    
+    
+    <!-- *** odometry *** -->
    <!-- Controls the differential drive robot -->
        <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
          <ros>
@@ -198,11 +211,41 @@
          <publish_wheel_tf>true</publish_wheel_tf>
 
          <odometry_frame>odom</odometry_frame>
-         <robot_base_frame>chassis</robot_base_frame>
+         <robot_base_frame>base_footprint</robot_base_frame>
+         <odometry_source>0</odometry_source>
        </plugin>    
        
+    
+    
+    <!-- *** IMU *** -->
+    <link name = "imu">
+
+    	<gravity>true</gravity>
+    	<sensor name="imu_sensor" type="imu">
+      		<always_on>true</always_on>
+      		<update_rate>100</update_rate>
+      		<visualize>true</visualize>
+      		<topic>imu</topic>
+      	<plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        	<initial_orientation_as_reference>false</initial_orientation_as_reference>
+        	<ros>
+        	 <namespace>/imu</namespace>
+          	 <remapping>~/out:=data</remapping>
+        	</ros>
+        <bodyName>imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <output_type>sensor_msgs/Imu</output_type>
+        <frame_name>imu_link</frame_name>
+      </plugin>
+    </sensor>
+    </link>
        
- <link name="lidar">
+    
+    <!-- *** LIDAR *** -->
+    <link name="lidar">
       <pose>0.15 0 0.3 0 0 -2</pose>
       
       <sensor name="rplidar" type="ray">
@@ -242,10 +285,26 @@
       </visual>
 </link>
        
-       <!-- Connect laser range finder to the robot's body -->
+       
+       
+       <!-- ****************************** JOINTS ****************************************** -->
+       <joint name="base_joint" type="fixed">
+    	 <parent>base_footprint</parent>
+    	 <child>base_link</child>
+    	 <pose>0 0 0 0 0 0</pose>
+       </joint>
+       
+       
        <joint type="fixed" name="laser_joint">
          <child>lidar</child>
-         <parent>chassis</parent>
+         <parent>base_link</parent>
        </joint>
+       
+       <joint type="fixed" name="imu_joint">
+      		<child>imu</child>
+      		<parent>base_link</parent>
+       </joint>
+       
+       
   </model>
 </sdf>
